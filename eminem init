@@ -1,0 +1,168 @@
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 9,
+        "fields": {
+            "year": 2000,
+            "summary": "<p>With the withdrawal of incumbent President Joe Biden from the race, both parties scramble to seize the power vacuum left in Biden's stead.</p><p>Marshall Mathers, better known to the world as Eminem, must prove he has the temperment and abilities to act as President, all while defending previous controversial statements he has made as a music artist.</p>Donald Trump, meanwhile, attempts to make a comeback bid for the White House following a controversial loss in 2020's election, an insurrection in January 2021, and a 34 felony conviction.",
+            "image_url": "https://i.imgur.com/GqHXwlM.png",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "https://i.imgur.com/baYoYmv.png",
+            "recommended_reading": "<a href=\"https://www.newsweek.com/donald-trump-eminem-2024-election-viral-video-criticism-opinions-1940166\" target=”_blank”>Everything Eminem Has Said About Donald Trump</a>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/2012-no-majority.jpg",
+            "creator": "Dan Bryan",
+            "display_year": "2024"
+        }
+    }
+]
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50000,
+        "fields": {
+            "first_name": "Marshall",
+            "last_name": "Mathers",
+            "election": 9,
+            "party": "Democratic",
+            "state": "Michigan",
+            "priority": 1,
+            "description": "<p>After Joe Biden withdrew from the presidential race, nobody knew what the Democratic National Convention had in store for the next candidate. Would Kamala Harris take the reigns? Would it be Dean Philips? Perhaps, then, they would stage an open primary to garner the most support?</p>Nobody expected <b>Marshall Mathers</b>, also known as <b>Eminem</b>, to actually win the nomination. With 107 days in the election season to muster a campaign, he must quickly define himself on the issues of the day, all while pressing an outsider image to help defeat Trumpism once and for all...",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://i.imgur.com/JsOGlwH.jpg",
+            "electoral_victory_message": "107 days ago, the party was in absolute shambles. 107 days ago, nobody knew what the future held for them, or what to expect from the campaign that was unfolding.<p> From what the networks are saying, you have triumphed over Trump to become the nation's 47th President. Trump doesn't call you, but Harris does, excited to work with you for the next 4 years. She becomes the first Vice President to serve under multiple presidents since John Calhoun, whereas you become the second President to win office with no prior public or military experience.<p>You must now act quickly to get your agenda in place, though the newly Republican Senate might make that more difficult. Be sure not to let cracks open in your coalition, or you may soon find yourself as unpopular as Biden. Best of luck, Mr. President!",
+            "electoral_loss_message": "107 days ago, the party was in absolute shambles. 107 days ago, nobody knew what the future held for them, or what to expect from the campaign that was unfolding.<p>Unfortunately, it appears that the campaigning, advertising, rallying, and all the other election hullabaloo has lead to your loss in this election. Was it the degrading comments towards women you said throughout your career? Was it the drug use? The attempt to play to both poor and rich? No matter the case, Trump will take office on January 20th, and become the first man since Grover Cleveland to win nonconsecutive terms as President.<P>As for you, you still have your millions of dollars, connections, and fans who would die for you. Your political career is, to be expected, over, but you were probably planning on retiring after the election anyways. Best of luck, Marshall.",
+            "no_electoral_majority_message": "107 days ago, the party was in absolute shambles. 107 days ago, nobody knew what the future held for them, or what to expect from the campaign that was unfolding.<p>Unfortunately, it appears that the campaigning, advertising, rallying, and all the other election hullabaloo has lead to a deadlock in the Electoral College. As a majority of House delegations are Republican, this ultimately means Trump will take office, and become the first man since Grover Cleveland to win nonconsecutive terms as President.<P>As for you, you still have your millions of dollars, connections, and fans who would die for you. Your political career is, to be expected, over, but you were probably planning on retiring after the election anyways. Best of luck, Marshall.",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50001,
+        "fields": {
+            "first_name": "Kamala",
+            "last_name": "Harris",
+            "election": 9,
+            "party": "Democratic",
+            "state": "California",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Kamala_Harris_April_2019.jpg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Incumbent Vice President Kamala Harris is perhaps the only option available to you that actively makes sense. While tied to the unpopular Biden administration, she also has maintained a somewhat low profile during his tenure, and thus cannot necessarily be tied to his failures.</p> Beyond this, she maintains high approval ratings with both female and young voters, both of whom are major holes in your potential coalition. She also brings experience and stability to the ticket, calming the fears of many of your potential voters.",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 88954,
+        "fields": {
+            "candidate": 50000,
+            "running_mate": 50001
+        }
+    }
+]
+
+campaignTrail_temp.credits = "imfakeithink"
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 25,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 9,
+        "candidates": [
+            50000
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 9,
+        "candidates": [
+            50000
+        ]
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 9,
+        "year": 2000,
+        "is_premium": 0,
+        "display_year": "2024"
+    }
+]
+
+jet_data = {
+    "headerColor": "#700016",
+    "windowColor": "#BFE6FF",
+    "containerColor": "#FFFFFF",
+    "innerWindowColor": "#E8FBFF",
+    "bannerImageUrl": "https://www.usatoday.com/gcdn/authoring/authoring-images/2024/11/04/USAT/76038337007-2182102962.jpg?crop=4499,2531,x0,y234&width=660&height=371&format=pjpg&auto=webplaceholderbanner.png",
+    "backgroundImageUrl": "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg",
+    "endingTextColor": "#000000",
+    "customQuote": "\"I don't hate women - they just sometimes make me mad.\" - Eminem",
+    "gameTitle": "THE DETROIT TRAIL"
+}
+
+//#startcode
+
+
+corrr = '\n              <h2>THE DETROIT TRAIL</h2><font id="wittyquote" size="4" color="white"><em>"I don't hate women - they just sometimes make me mad." - Eminem</em></font>\n            ';
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#700016";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#BFE6FF";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#FFFFFF";
+
+document.getElementById("header").src = "https://www.usatoday.com/gcdn/authoring/authoring-images/2024/11/04/USAT/76038337007-2182102962.jpg?crop=4499,2531,x0,y234&width=660&height=371&format=pjpg&auto=webplaceholderbanner.png";
+
+document.body.background = "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#E8FBFF!important;}</style>";
+
+//#endcode
